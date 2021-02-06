@@ -19,9 +19,28 @@ module : a single js file that has some reasonbale functionality.
 
 
 ### npm help
+`npm -h` display all npm commands. 
+`npm install -h` display specific information about the install command 
+`npm help <command>` => `npm help command` head you over to help web page. 
 
 
 ### npm shortcuts
+- flag shortcus head over to [npm config](https://docs.npmjs.com/cli/v6/using-npm/config) OR https://docs.npmjs.com/cli/v6/using-npm/config
+    `-v` : `--version`
+    `-h , -?, --help, -H` : `--usage`
+    `-g` : `--global`
+    `-m` : `--message`
+    `-S` : `--save`
+    `-P` : `--save-prod`
+    `-D` : `--save-dev`
+    `-y` : `--yes`
+    `-B` : `--save-Bundle`
+    `-f` : `--force`
+    `-l`: `--long`
+    `-C`: `--prefix`
+ 
+
+- There are also other shortcuts like  `npm i <package-name>`
 
 ### Creating package.json
 
