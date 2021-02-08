@@ -98,9 +98,39 @@ To uninstall a package globally
 `npm uninstall -g <package-name>`
 
 
-
 ### Installing specific version 
+Version format @1.8.3
+- 1 is the major version 
+    It increase when there is functionality break, and fixing the compatibitliy issues. 
+- 8 is the minor version 
+    It increase when there is a new feature involved. 
+- 3 is the revision or patch number
+    it increase when there is a bug fix or performance improvement to a porduct. It does not change any functionality.
+
+- `npm i <package-name>` install the latest version of the package. 
+- `npm i <package-name>@specific-version` example `npm i experss@1.9.4` install the specific version of a product. 
+- `npm i <package-name>@1.8` OR `npm i <package-name>@1.8.*` install the latest version of 1.8 of the product. 
+- `npm i <package-name>@1` OR `npm i <package-name>@1.*` install the latest version of 1 of the product. 
+- `npm i <package-name>@">=1.1.3"` install the 1.1.3 and above version of the product
+- `npm i <package-name>@">=1.1.3  <1.5.0"` install the 1.1.3 till 1.5.0 version of the product
+ There are more expression like && and || in the quotation.  
+
+- `npm i <package-name>` add "package-name":"^1.2.4" means next time when we run `npm install` it will install the latest version of the package not 1.2.4. 
+- `npm i <package-name>@specific-version-number --save--exact` add the exact version by command, next time when we `npm install` it will install only the specific version. For example, `npm install express@1.4 --save--exact`. 
+
+
+
 ### Installing existing dependencies 
+- `rm -rf node_modules/` remove/delete the node_module folder
+- `rm package-json.lock` delete the package-json.lock file. 
+- In package.json file 
+    - "package-name": "^1.3.0" installt the latest version
+    - "package-name": "~1.3.0" installt the latest version of 1.3
+    - "package-name": "1.3.0" installt the ex version
+    - "package-name": "*" installt the latest version of the pakcage does not care about the major,minor or patch number. 
+Whenever there is a confilct in versioning remove the node_modules directory and package-lock.json for running `npm i`
+
+
 ### Update packages
 ### Setting defaults
 
