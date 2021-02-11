@@ -8,9 +8,7 @@
   },
   "author": "Khalil",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "jshint": "^2.12.0"
   }

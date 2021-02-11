@@ -132,7 +132,46 @@ Whenever there is a confilct in versioning remove the node_modules directory and
 
 
 ### Update packages
+`npm upadte` update all the packages.
+
 ### Setting defaults
+`npm set init-author-name 'khalil ahmad'` update the default name of author of app.
+[Read more](https://docs.npmjs.com/cli/v6/using-npm/config)
+ 
 
 
 # npm Advance
+### Installing packages from Gibhub Repo
+`npm install URL` install the package
+`npm install https://github.com/expressjs/express.git` install express from git hub repo
+
+### Install package form Gist 
+`npm install gist:hast_code`
+
+## Install package from a folder  
+`npm install ../path` Command install a package from a local computer
+
+### The npm register 
+the source code of expressjs library 
+[https://registry.npmjs.org/express](https://registry.npmjs.org/express) 
+
+[npm.im/express](npm.im/express) redirect you to [https://www.npmjs.com/package/express](https://www.npmjs.com/package/express)
+
+
+### Searching for Packages
+`npm search <package-name>` list all keywords in the package. 
+
+### The "npm Repo" command 
+`npm repo <package-name>` Opens the github page for the pckage.  
+
+### Upgrade npm
+open administrator cli and run  
+`npm i npm@latest -g` commnad 
+
+### Audting 
+`npm audit` list the vulnerabilities of a package. 
+`npm audit fix` fix the vulnerabilites of a package. 
+
+
+# Publishing a package 
+to be learning....
